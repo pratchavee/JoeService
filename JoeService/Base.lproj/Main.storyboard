@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WallAuthen" translatesAutoresizingMaskIntoConstraints="NO" id="Z38-R0-K7O">
-                                <rect key="frame" x="0.0" y="44" width="414" height="822"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="3G5-6w-5F6">
                                 <rect key="frame" x="132" y="94" width="150" height="150"/>
@@ -37,7 +37,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eAI-0W-GC2">
                                 <rect key="frame" x="82" y="319" width="250" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="250" id="JTF-fj-sRy"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="JTF-fj-sRy"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -46,7 +46,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PPN-td-dqy">
                                 <rect key="frame" x="82" y="357" width="250" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="250" id="nld-Uo-31g"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="nld-Uo-31g"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -56,7 +56,7 @@
                                 <rect key="frame" x="82" y="413" width="250" height="30"/>
                                 <color key="backgroundColor" red="0.76731389760971069" green="0.4275003969669342" blue="0.27266785502433777" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="250" id="orM-iD-3Ci"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="orM-iD-3Ci"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
                                 <state key="normal" title="Login">
@@ -66,7 +66,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fPq-Dc-qhj">
                                 <rect key="frame" x="82" y="468" width="250" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="250" id="Ggg-rT-uaR"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="Ggg-rT-uaR"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
                                 <size key="titleShadowOffset" width="1" height="0.0"/>
@@ -92,11 +92,11 @@
                             <constraint firstItem="fPq-Dc-qhj" firstAttribute="centerX" secondItem="j46-4K-Fxg" secondAttribute="centerX" id="T5n-Pf-8GY"/>
                             <constraint firstItem="fPq-Dc-qhj" firstAttribute="top" secondItem="ARx-aa-X4I" secondAttribute="bottom" constant="25" id="fbZ-mc-tXL"/>
                             <constraint firstItem="eAI-0W-GC2" firstAttribute="centerX" secondItem="j46-4K-Fxg" secondAttribute="centerX" id="gv6-5Z-IIY"/>
-                            <constraint firstAttribute="bottom" secondItem="Z38-R0-K7O" secondAttribute="bottom" constant="250" id="isR-6G-04y"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Z38-R0-K7O" secondAttribute="bottom" id="isR-6G-04y"/>
                             <constraint firstItem="3G5-6w-5F6" firstAttribute="centerX" secondItem="j46-4K-Fxg" secondAttribute="centerX" id="lJE-1v-LaE"/>
                             <constraint firstItem="eAI-0W-GC2" firstAttribute="top" secondItem="I1q-Gz-3RB" secondAttribute="bottom" constant="8" id="rkH-ZC-rWW"/>
                             <constraint firstItem="Z38-R0-K7O" firstAttribute="leading" secondItem="gIj-kU-EZC" secondAttribute="leading" id="vQV-I5-89Y"/>
-                            <constraint firstAttribute="bottom" secondItem="Z38-R0-K7O" secondAttribute="bottom" constant="30" id="zfr-PM-c88"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Z38-R0-K7O" secondAttribute="bottom" id="zfr-PM-c88"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gIj-kU-EZC"/>
                     </view>
