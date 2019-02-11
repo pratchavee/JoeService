@@ -106,6 +106,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="addressLabel" destination="VJx-CY-bpx" id="wpe-gP-n9g"/>
+                        <outlet property="emailLabel" destination="CD4-A2-Bt0" id="sCa-Z2-MFE"/>
+                        <outlet property="nameLabel" destination="mzX-TD-BtF" id="tdb-iE-2jj"/>
+                        <outlet property="phoneLabel" destination="iHI-ee-3b4" id="WHa-PD-2a2"/>
+                        <outlet property="surnameLabel" destination="7tk-hx-wh0" id="F8l-8k-cOH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
