@@ -228,16 +228,93 @@
                     <view key="view" contentMode="scaleToFill" id="Tkr-mo-XfQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vgc-Nl-2kj">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <color key="backgroundColor" red="1" green="0.46841407860000001" blue="0.60880549799999994" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.48292160029999998" green="0.2386672497" blue="0.16665637489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="New Register" id="KpU-aT-BWo">
+                                        <barButtonItem key="leftBarButtonItem" title="Item" image="BackArrow" id="7fl-5U-0hd">
+                                            <connections>
+                                                <action selector="backButton:" destination="22v-hI-HFw" id="yaP-lN-uVK"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Item" image="CloudUpload" id="wrt-is-FV5">
+                                            <connections>
+                                                <action selector="UploadButton:" destination="22v-hI-HFw" id="Fd0-4D-mzi"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="KLY-9O-3Gu">
+                                <rect key="frame" x="0.0" y="97" width="414" height="765"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w0k-Gv-UsA">
+                                <rect key="frame" x="82" y="238" width="250" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="2cn-dx-6ZC"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hII-h2-UOu">
+                                <rect key="frame" x="82" y="276" width="250" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="fpL-6I-jEe"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2BJ-WX-li4">
+                                <rect key="frame" x="82" y="314" width="250" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="St3-fV-gLI"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Vgc-Nl-2kj" firstAttribute="trailing" secondItem="xU1-Sc-2HK" secondAttribute="trailing" id="CkK-8W-8b5"/>
+                            <constraint firstItem="w0k-Gv-UsA" firstAttribute="top" secondItem="Vgc-Nl-2kj" secondAttribute="bottom" constant="150" id="Dfs-lQ-UiD"/>
+                            <constraint firstItem="KLY-9O-3Gu" firstAttribute="top" secondItem="Vgc-Nl-2kj" secondAttribute="bottom" constant="9" id="OZm-V0-YJr"/>
+                            <constraint firstItem="2BJ-WX-li4" firstAttribute="centerX" secondItem="Tkr-mo-XfQ" secondAttribute="centerX" id="Sul-fc-5mM"/>
+                            <constraint firstItem="2BJ-WX-li4" firstAttribute="top" secondItem="hII-h2-UOu" secondAttribute="bottom" constant="8" id="Uep-Wc-2fz"/>
+                            <constraint firstItem="w0k-Gv-UsA" firstAttribute="centerX" secondItem="Tkr-mo-XfQ" secondAttribute="centerX" id="Wf3-sb-TCP"/>
+                            <constraint firstItem="hII-h2-UOu" firstAttribute="centerX" secondItem="Tkr-mo-XfQ" secondAttribute="centerX" id="YWT-Y4-r6U"/>
+                            <constraint firstItem="Vgc-Nl-2kj" firstAttribute="leading" secondItem="xU1-Sc-2HK" secondAttribute="leading" id="ZXp-3y-X83"/>
+                            <constraint firstItem="KLY-9O-3Gu" firstAttribute="trailing" secondItem="xU1-Sc-2HK" secondAttribute="trailing" id="eyJ-Pc-QYr"/>
+                            <constraint firstItem="xU1-Sc-2HK" firstAttribute="bottom" secondItem="KLY-9O-3Gu" secondAttribute="bottom" id="gXR-xd-dP5"/>
+                            <constraint firstItem="KLY-9O-3Gu" firstAttribute="leading" secondItem="xU1-Sc-2HK" secondAttribute="leading" id="ggC-Qg-icb"/>
+                            <constraint firstItem="Vgc-Nl-2kj" firstAttribute="top" secondItem="xU1-Sc-2HK" secondAttribute="top" id="nS3-9W-8Oh"/>
+                            <constraint firstItem="hII-h2-UOu" firstAttribute="top" secondItem="w0k-Gv-UsA" secondAttribute="bottom" constant="8" id="ygv-1Q-c31"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="xU1-Sc-2HK"/>
                     </view>
+                    <connections>
+                        <outlet property="PasswordTextField" destination="2BJ-WX-li4" id="onP-ec-WxK"/>
+                        <outlet property="UserTextField" destination="hII-h2-UOu" id="Jfo-b1-f3i"/>
+                        <outlet property="nameTextField" destination="w0k-Gv-UsA" id="Ilr-Ae-FEB"/>
+                        <segue destination="Xl9-0b-xUW" kind="show" identifier="BackAuthen" id="8Np-M7-ltp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0gV-ZH-sX4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1587" y="133"/>
+            <point key="canvasLocation" x="-1588.4057971014495" y="132.58928571428572"/>
         </scene>
     </scenes>
     <resources>
+        <image name="BackArrow" width="108" height="108"/>
+        <image name="CloudUpload" width="108" height="108"/>
         <image name="Logo" width="170.66667175292969" height="170.66667175292969"/>
         <image name="WallAuthen" width="1260.6666259765625" height="1891"/>
         <image name="Wallpaper" width="333.33334350585938" height="333.33334350585938"/>

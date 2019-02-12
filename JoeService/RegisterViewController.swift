@@ -9,22 +9,64 @@
 import UIKit
 
 class RegisterViewController: UIViewController {
+    
+//    Explicit
+    
+    var name:String?
+    var user:String?
+    var password:String?
+    
+    
+    
+    
+    @IBOutlet weak var nameTextField: UITextField!
+    
+    @IBOutlet weak var UserTextField: UITextField!
+    
+    @IBOutlet weak var PasswordTextField: UITextField!
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }//Main Method
+    
+    
+    
+    
+    
+    
+
+   
+    @IBAction func UploadButton(_ sender: UIBarButtonItem) {
+        
+//        Get Value From TextField
+        name = nameTextField.text
+        user = UserTextField.text
+        password = PasswordTextField.text
+        
+//        Show Value From TextField on Console
+        print("name ==>\(String(describing: name!))")
+        print("user ==>\(String(describing: user!))")
+        print("password ==>\(String(describing: password!))")
+        
+        //Check Space
+        if (name!.count == 0)||(user!.count == 0)||(password!.count == 0){
+//            Have Space
+            print("Have Space")
+        }else{
+//            No Space
+            print("No Space")
+        }
+    }
+        func backButton(_ sender: UIBarButtonItem) {
+        
+        
+        performSegue(withIdentifier: "BackAuthen", sender: self)
     }
     
 
-    /*
-    // MARK: - Navigation
+}// Main class
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-}
