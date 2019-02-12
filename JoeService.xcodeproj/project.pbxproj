@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		D5040DB122115E7C002FC533 /* AuthenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5040DB022115E7C002FC533 /* AuthenViewController.swift */; };
 		D5040DB322126A8C002FC533 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5040DB222126A8C002FC533 /* RegisterViewController.swift */; };
+		D5040DB522129EFF002FC533 /* MyConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5040DB422129EFF002FC533 /* MyConstant.swift */; };
 		D58A6F2C2211256B005AC18C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58A6F2B2211256B005AC18C /* AppDelegate.swift */; };
 		D58A6F2E2211256B005AC18C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58A6F2D2211256B005AC18C /* ViewController.swift */; };
 		D58A6F312211256B005AC18C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D58A6F2F2211256B005AC18C /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* Begin PBXFileReference section */
 		D5040DB022115E7C002FC533 /* AuthenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenViewController.swift; sourceTree = "<group>"; };
 		D5040DB222126A8C002FC533 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		D5040DB422129EFF002FC533 /* MyConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyConstant.swift; sourceTree = "<group>"; };
 		D58A6F282211256B005AC18C /* JoeService.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JoeService.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D58A6F2B2211256B005AC18C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D58A6F2D2211256B005AC18C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				D58A6F2D2211256B005AC18C /* ViewController.swift */,
 				D58A6F2F2211256B005AC18C /* Main.storyboard */,
 				D5040DB222126A8C002FC533 /* RegisterViewController.swift */,
+				D5040DB422129EFF002FC533 /* MyConstant.swift */,
 				D5040DB022115E7C002FC533 /* AuthenViewController.swift */,
 				D58A6F322211256D005AC18C /* Assets.xcassets */,
 				D58A6F342211256D005AC18C /* LaunchScreen.storyboard */,
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D58A6F2E2211256B005AC18C /* ViewController.swift in Sources */,
+				D5040DB522129EFF002FC533 /* MyConstant.swift in Sources */,
 				D58A6F2C2211256B005AC18C /* AppDelegate.swift in Sources */,
 				D5040DB122115E7C002FC533 /* AuthenViewController.swift in Sources */,
 				D5040DB322126A8C002FC533 /* RegisterViewController.swift in Sources */,
